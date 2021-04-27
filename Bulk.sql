@@ -42,9 +42,9 @@ DROP PROCEDURE [dbo].[CLR_Bulk_mt_xls];
 GO
 IF EXISTS (
 SELECT * FROM dbo.sysobjects 
-WHERE id = object_id (N'[dbo].[CLR_Bulk_Exp_1]') )
+WHERE id = object_id (N'[dbo].[CLR_Bulk_Exp]') )
 
-DROP PROCEDURE [dbo].[CLR_Bulk_Exp_1];
+DROP PROCEDURE [dbo].[CLR_Bulk_Exp];
 
 GO
 ------------------------------------------
