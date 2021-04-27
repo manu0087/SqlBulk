@@ -38,7 +38,7 @@ exec @i=dbo.CLR_Bulk_Exp 'database',
 						 'c6',--the column i need to manage with a particular conversion(only date available)
 						 'yyyy_MM_dd',--the format of the column before specified
 						 1,--export the heading
-						 'free text',--free text that could be possible add
+						 'select getdate()',--free text that could be possible add (could be also a query)
 						 0,--where i want to add the text, after or before header?
 						 @r output
 						
