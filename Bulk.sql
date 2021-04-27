@@ -8,11 +8,11 @@
 ************/
 
 
-use [test_key]
+use [database]
 
 --first step - begin
 
-alter database [test_key] set trustworthy on;
+alter database [database] set trustworthy on;
 go
 
 sp_configure 'show advanced options', 1;
